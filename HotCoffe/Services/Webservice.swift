@@ -13,8 +13,21 @@ enum NetworkError: Error {
     case urlError
 }
 
+enum HTTPMethod: String {
+    case get = "GET"
+    case post = "POST"
+}
+
 struct Resource<T: Codable> {
     let url: URL
+    var httpMethod = HTTPMethod.get
+    var body: Data? = nil
+}
+
+extension Resource {
+    init(url: URL) {
+        self.url = url
+    }
 }
 
 class Webservice {
