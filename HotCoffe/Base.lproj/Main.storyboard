@@ -82,7 +82,7 @@
                                 </prototypes>
                             </tableView>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="meC-yQ-EEY">
-                                <rect key="frame" x="107" y="646" width="200" height="34"/>
+                                <rect key="frame" x="107" y="669" width="200" height="34"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="200" id="t2N-DJ-qO2"/>
                                 </constraints>
@@ -90,21 +90,13 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="sQi-WC-BDQ">
-                                <rect key="frame" x="107" y="705" width="200" height="34"/>
+                                <rect key="frame" x="107" y="728" width="200" height="34"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="200" id="Ift-sj-sep"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="boy-F1-CCE">
-                                <rect key="frame" x="104" y="556" width="206" height="32"/>
-                                <segments>
-                                    <segment title="Small"/>
-                                    <segment title="Medium"/>
-                                    <segment title="Large"/>
-                                </segments>
-                            </segmentedControl>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="ev0-rE-Hi8"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -112,12 +104,10 @@
                             <constraint firstItem="zLx-zd-DGG" firstAttribute="top" secondItem="ev0-rE-Hi8" secondAttribute="top" id="1Ko-x9-g2F"/>
                             <constraint firstItem="zLx-zd-DGG" firstAttribute="width" secondItem="Soo-u5-tDb" secondAttribute="width" id="6p1-yl-Jmn"/>
                             <constraint firstItem="sQi-WC-BDQ" firstAttribute="top" secondItem="meC-yQ-EEY" secondAttribute="bottom" constant="25" id="Ilq-nW-HKp"/>
-                            <constraint firstItem="boy-F1-CCE" firstAttribute="centerX" secondItem="Soo-u5-tDb" secondAttribute="centerX" id="LL1-bx-xNi"/>
-                            <constraint firstItem="meC-yQ-EEY" firstAttribute="top" secondItem="boy-F1-CCE" secondAttribute="bottom" constant="59" id="YID-6g-dSn"/>
                             <constraint firstItem="meC-yQ-EEY" firstAttribute="centerX" secondItem="Soo-u5-tDb" secondAttribute="centerX" id="fEb-Xk-3Rp"/>
+                            <constraint firstItem="ev0-rE-Hi8" firstAttribute="bottom" secondItem="sQi-WC-BDQ" secondAttribute="bottom" constant="100" id="gkO-En-wr1"/>
                             <constraint firstItem="zLx-zd-DGG" firstAttribute="height" secondItem="Soo-u5-tDb" secondAttribute="height" multiplier="0.5" id="ivk-Pc-i7z"/>
                             <constraint firstItem="sQi-WC-BDQ" firstAttribute="centerX" secondItem="Soo-u5-tDb" secondAttribute="centerX" id="lfb-Uu-ddS"/>
-                            <constraint firstItem="boy-F1-CCE" firstAttribute="top" secondItem="zLx-zd-DGG" secondAttribute="bottom" constant="20" id="msu-DW-6Ol"/>
                             <constraint firstItem="zLx-zd-DGG" firstAttribute="leading" secondItem="ev0-rE-Hi8" secondAttribute="leading" id="zg7-if-sev"/>
                         </constraints>
                     </view>
