@@ -9,21 +9,23 @@
 /* Begin PBXBuildFile section */
 		9745BD9526B5E91400535CB3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9745BD9426B5E91400535CB3 /* AppDelegate.swift */; };
 		9745BD9726B5E91400535CB3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9745BD9626B5E91400535CB3 /* SceneDelegate.swift */; };
-		9745BD9926B5E91400535CB3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9745BD9826B5E91400535CB3 /* ViewController.swift */; };
 		9745BD9C26B5E91400535CB3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9745BD9A26B5E91400535CB3 /* Main.storyboard */; };
 		9745BD9E26B5E91600535CB3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9745BD9D26B5E91600535CB3 /* Assets.xcassets */; };
 		9745BDA126B5E91600535CB3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9745BD9F26B5E91600535CB3 /* LaunchScreen.storyboard */; };
+		9745BDAD26B5EB7900535CB3 /* OrdersTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9745BDAC26B5EB7900535CB3 /* OrdersTableViewController.swift */; };
+		9745BDB026B5EBCB00535CB3 /* AddOrderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9745BDAF26B5EBCB00535CB3 /* AddOrderViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		9745BD9126B5E91400535CB3 /* HotCoffe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HotCoffe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9745BD9426B5E91400535CB3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9745BD9626B5E91400535CB3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		9745BD9826B5E91400535CB3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		9745BD9B26B5E91400535CB3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9745BD9D26B5E91600535CB3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9745BDA026B5E91600535CB3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9745BDA226B5E91600535CB3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9745BDAC26B5EB7900535CB3 /* OrdersTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrdersTableViewController.swift; sourceTree = "<group>"; };
+		9745BDAF26B5EBCB00535CB3 /* AddOrderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddOrderViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +58,24 @@
 		9745BD9326B5E91400535CB3 /* HotCoffe */ = {
 			isa = PBXGroup;
 			children = (
+				9745BDAA26B5EA2800535CB3 /* Controllers */,
 				9745BD9426B5E91400535CB3 /* AppDelegate.swift */,
 				9745BD9626B5E91400535CB3 /* SceneDelegate.swift */,
-				9745BD9826B5E91400535CB3 /* ViewController.swift */,
 				9745BD9A26B5E91400535CB3 /* Main.storyboard */,
 				9745BD9D26B5E91600535CB3 /* Assets.xcassets */,
 				9745BD9F26B5E91600535CB3 /* LaunchScreen.storyboard */,
 				9745BDA226B5E91600535CB3 /* Info.plist */,
 			);
 			path = HotCoffe;
+			sourceTree = "<group>";
+		};
+		9745BDAA26B5EA2800535CB3 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				9745BDAC26B5EB7900535CB3 /* OrdersTableViewController.swift */,
+				9745BDAF26B5EBCB00535CB3 /* AddOrderViewController.swift */,
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,9 +148,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9745BD9926B5E91400535CB3 /* ViewController.swift in Sources */,
 				9745BD9526B5E91400535CB3 /* AppDelegate.swift in Sources */,
 				9745BD9726B5E91400535CB3 /* SceneDelegate.swift in Sources */,
+				9745BDAD26B5EB7900535CB3 /* OrdersTableViewController.swift in Sources */,
+				9745BDB026B5EBCB00535CB3 /* AddOrderViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
