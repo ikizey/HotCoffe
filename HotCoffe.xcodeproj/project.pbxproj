@@ -17,6 +17,7 @@
 		9745BDB426B5F15D00535CB3 /* Webservice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9745BDB326B5F15D00535CB3 /* Webservice.swift */; };
 		9745BDB926B5F43500535CB3 /* Order.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9745BDB826B5F43500535CB3 /* Order.swift */; };
 		9745BDBD26B5F87D00535CB3 /* OrderViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9745BDBC26B5F87D00535CB3 /* OrderViewModel.swift */; };
+		9745BDC126B5FF3E00535CB3 /* AddCofferOrderViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9745BDC026B5FF3E00535CB3 /* AddCofferOrderViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		9745BDB326B5F15D00535CB3 /* Webservice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Webservice.swift; sourceTree = "<group>"; };
 		9745BDB826B5F43500535CB3 /* Order.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Order.swift; sourceTree = "<group>"; };
 		9745BDBC26B5F87D00535CB3 /* OrderViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderViewModel.swift; sourceTree = "<group>"; };
+		9745BDC026B5FF3E00535CB3 /* AddCofferOrderViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCofferOrderViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +109,7 @@
 			isa = PBXGroup;
 			children = (
 				9745BDBC26B5F87D00535CB3 /* OrderViewModel.swift */,
+				9745BDC026B5FF3E00535CB3 /* AddCofferOrderViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -187,6 +190,7 @@
 				9745BDAD26B5EB7900535CB3 /* OrdersTableViewController.swift in Sources */,
 				9745BDB426B5F15D00535CB3 /* Webservice.swift in Sources */,
 				9745BDBD26B5F87D00535CB3 /* OrderViewModel.swift in Sources */,
+				9745BDC126B5FF3E00535CB3 /* AddCofferOrderViewModel.swift in Sources */,
 				9745BDB026B5EBCB00535CB3 /* AddOrderViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
