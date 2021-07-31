@@ -10,6 +10,8 @@ import UIKit
 class AddOrderViewController: UIViewController {
     
     @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var nameTextField: UITextField!
+    @IBOutlet weak var emailTextField: UITextField!
     
     private var viewModel = AddCofferOrderViewModel()
     private var coffeSizesSegmentedControl: UISegmentedControl!
@@ -33,6 +35,23 @@ class AddOrderViewController: UIViewController {
         
         coffeSizesSegmentedControl.centerXAnchor.constraint(
             equalTo: view.centerXAnchor).isActive = true
+    }
+    
+    
+    @IBAction func save() {
+        let name = nameTextField.text
+        let email = emailTextField.text
+        
+        let size = coffeSizesSegmentedControl.titleForSegment(
+            at: coffeSizesSegmentedControl.selectedSegmentIndex)
+        
+        guard let indexPath = tableView.indexPathForSelectedRow else {
+            fatalError("Error in selecting coffe!")}
+        
+        viewModel.name = name
+        viewModel.email = email
+        viewModel.selectedSize = size
+        viewModel.selectedType = viewModel.types[indexPath.row]
     }
 }
 

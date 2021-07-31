@@ -112,9 +112,15 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Add New Order" id="Tgg-5w-9A1">
-                        <barButtonItem key="rightBarButtonItem" title="Save" id="5vR-HT-2n7"/>
+                        <barButtonItem key="rightBarButtonItem" title="Save" id="5vR-HT-2n7">
+                            <connections>
+                                <action selector="save:" destination="bIu-Be-ZiV" id="Oom-CF-lWK"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="emailTextField" destination="sQi-WC-BDQ" id="WdO-at-ach"/>
+                        <outlet property="nameTextField" destination="meC-yQ-EEY" id="k5H-Ue-dlB"/>
                         <outlet property="tableView" destination="zLx-zd-DGG" id="pBA-JE-dSV"/>
                     </connections>
                 </viewController>
