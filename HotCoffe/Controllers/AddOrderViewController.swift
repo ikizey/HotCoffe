@@ -36,7 +36,15 @@ class AddOrderViewController: UIViewController {
     }
 }
 
-extension AddOrderViewController: UITableViewDelegate {}
+extension AddOrderViewController: UITableViewDelegate {
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.cellForRow(at: indexPath)?.accessoryType = .checkmark
+    }
+    
+    func tableView(_ tableView: UITableView, didDeselectRowAt indexPath: IndexPath) {
+        tableView.cellForRow(at: indexPath)?.accessoryType = .none
+    }
+}
 
 extension AddOrderViewController: UITableViewDataSource {
     
