@@ -114,7 +114,7 @@
                     <navigationItem key="navigationItem" title="Add New Order" id="Tgg-5w-9A1">
                         <barButtonItem key="rightBarButtonItem" title="Save" id="5vR-HT-2n7">
                             <connections>
-                                <action selector="save:" destination="bIu-Be-ZiV" id="Oom-CF-lWK"/>
+                                <action selector="save" destination="bIu-Be-ZiV" id="xGY-LQ-qBD"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>

@@ -29,6 +29,13 @@ class OrdersTableViewController: UITableViewController {
         }
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        guard let addOrderController = segue.destination as? AddOrderViewController else {
+            fatalError("Error preparing segue!")}
+        
+        addOrderController.delegate = self
+    }
+    
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         orderListViewModel.ordersViewModel.count
     }
@@ -43,3 +50,20 @@ class OrdersTableViewController: UITableViewController {
     }
 }
 
+extension OrdersTableViewController: AddOrderDelegate {
+    
+    func addOrderViewControllerDidSave(order: Order, viewController: UIViewController) {
+        navigationController?.popViewController(animated: true)
+        
+        let orderViewModel = OrderViewModel(order: order)
+        orderListViewModel.ordersViewModel.append(orderViewModel)
+        tableView.insertRows(at: [IndexPath(row: orderListViewModel.ordersViewModel.count - 1, section: 0)],
+                             with: .automatic)
+    }
+    
+    func addOrderViewControllerDidClose(viewController: UIViewController) {
+        navigationController?.popViewController(animated: true)
+    }
+    
+    
+}
