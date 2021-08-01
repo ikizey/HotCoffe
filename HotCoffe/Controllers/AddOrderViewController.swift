@@ -40,6 +40,7 @@ class AddOrderViewController: UIViewController {
         
         coffeSizesSegmentedControl = UISegmentedControl(items: viewModel.sizes)
         coffeSizesSegmentedControl.translatesAutoresizingMaskIntoConstraints = false
+        coffeSizesSegmentedControl.selectedSegmentIndex = 0
         view.addSubview(coffeSizesSegmentedControl)
         
         coffeSizesSegmentedControl.topAnchor.constraint(
